@@ -1,0 +1,120 @@
+[2025-06-12 12:46:12Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-12 12:46:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:12Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'Runner': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.runner'
+[2025-06-12 12:46:13Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-06-12 12:46:13Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-06-12 12:46:13Z INFO Listener] Version: 2.325.0
+[2025-06-12 12:46:13Z INFO Listener] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-12 12:46:13Z INFO Listener] Culture: fr-FR
+[2025-06-12 12:46:13Z INFO Listener] UI Culture: fr-FR
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO Listener] Validating directory permissions for: 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO CommandLineParser] Parse
+[2025-06-12 12:46:13Z INFO CommandLineParser] Parsing 1 args
+[2025-06-12 12:46:13Z INFO CommandLineParser] parsing argument
+[2025-06-12 12:46:13Z INFO CommandLineParser] HasArgs: False
+[2025-06-12 12:46:13Z INFO CommandLineParser] Adding Command: run
+[2025-06-12 12:46:13Z INFO Listener] Arguments parsed
+[2025-06-12 12:46:13Z INFO Runner] ExecuteCommand
+[2025-06-12 12:46:13Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin\Runner.Listener.dll
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] binPath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] RootFolder: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'Runner': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.runner'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] ConfigFilePath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.runner
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.runner_migrated'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.runner_migrated
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] CredFilePath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials_migrated'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials_migrated
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'Service': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.service'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.service
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'help': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'version': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'check': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Command 'configure': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Command 'remove': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-06-12 12:46:13Z INFO ConfigurationManager] LoadSettings
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsConfigured()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-12 12:46:13Z INFO ConfigurationManager] Is configured: True
+[2025-06-12 12:46:13Z INFO ConfigurationStore] Read setting file: 399 chars
+[2025-06-12 12:46:13Z INFO ConfigurationManager] Settings Loaded
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-06-12 12:46:13Z INFO CommandSettings] Command 'run': 'True'
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsConfigured()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-12 12:46:13Z INFO ConfigurationManager] Is configured: True
+[2025-06-12 12:46:13Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-06-12 12:46:13Z INFO Runner] Set runner startup type - Manual
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-12 12:46:13Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-12 12:46:13Z INFO Runner] RunAsync
+[2025-06-12 12:46:13Z INFO ConfigurationManager] LoadMigratedSettings
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsMigratedConfigured()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2025-06-12 12:46:13Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2025-06-12 12:46:13Z INFO Runner] Falling back to original .runner settings
+[2025-06-12 12:46:13Z INFO Runner] Using BrokerMessageListener
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] Using provided settings
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] {
+  "AgentId": 2,
+  "AgentName": "MSI",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus25.actions.githubusercontent.com/ibMpLgrC3KBe52DjjtfjCOWQW2MR2n2a9tjBTgX1wXUiIb2s3j/",
+  "GitHubUrl": "https://github.com/Tozano/pytest-cahier-des-charges",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] Loading Credentials
+[2025-06-12 12:46:13Z INFO ConfigurationStore] HasCredentials()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] stored True
+[2025-06-12 12:46:13Z INFO CredentialManager] GetCredentialProvider
+[2025-06-12 12:46:13Z INFO CredentialManager] Creating type OAuth
+[2025-06-12 12:46:13Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\bin'
+[2025-06-12 12:46:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner'
+[2025-06-12 12:46:13Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials_rsaparams'
+[2025-06-12 12:46:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials_rsaparams
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-12 12:46:13Z INFO ConfigurationStore] HasCredentials()
+[2025-06-12 12:46:13Z INFO ConfigurationStore] stored True
+[2025-06-12 12:46:13Z INFO CredentialManager] GetCredentialProvider
+[2025-06-12 12:46:13Z INFO CredentialManager] Creating type OAuth
+[2025-06-12 12:46:13Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-12 12:46:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\tangu\Developpement\Tests\Cahier_des_charges\actions-runner\.credentials_rsaparams
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] VssConnection created
+[2025-06-12 12:46:13Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-12 12:46:13Z INFO RunnerServer] EstablishVssConnection
+[2025-06-12 12:46:13Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-12 12:46:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-12 12:46:13Z INFO RunnerServer] EstablishVssConnection
+[2025-06-12 12:46:13Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-12 12:46:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-12 12:46:13Z INFO RunnerServer] EstablishVssConnection
+[2025-06-12 12:46:13Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-12 12:46:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
