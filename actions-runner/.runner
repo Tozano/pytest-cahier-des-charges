@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "MSI",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus25.actions.githubusercontent.com/ibMpLgrC3KBe52DjjtfjCOWQW2MR2n2a9tjBTgX1wXUiIb2s3j/",
+  "gitHubUrl": "https://github.com/Tozano/pytest-cahier-des-charges",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
