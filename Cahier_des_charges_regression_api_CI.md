@@ -52,6 +52,13 @@ mon_projet/
    pytest-mock
    ```
 
+Cette étape consiste à créer la structure de fichiers du projet et à configurer l’environnement de développement.
+
+- On crée tous les fichiers nécessaires au projet, y compris ceux pour les tests.
+- On utilise un environnement virtuel (`venv`) pour isoler les dépendances du projet.
+- On installe les bibliothèques essentielles : Flask pour l’API, pytest pour les tests, et pytest-mock pour simuler des appels de fonctions.
+- Le fichier `requirements.txt` permet de lister toutes les dépendances pour pouvoir les réinstaller facilement.
+
 ---
 
 ## 2. Module d’analyse (`analyse.py`)
@@ -86,6 +93,12 @@ def regression_lineaire(x: List[float], y: List[float]) -> Tuple[float, float]:
     return a, b
 ```
 
+C’est ici que sont définies les fonctions principales du projet :
+
+- `moyenne` : calcule la moyenne d’une liste de nombres. Elle lève une erreur si la liste est vide.
+- `regression_lineaire` : calcule les coefficients `a` et `b` d’une droite de régression linéaire (y = ax + b) avec la méthode des moindres carrés.
+- Des vérifications sont ajoutées pour éviter les divisions par zéro ou les entrées invalides.
+
 ### 2.1 Tests ciblés avec mock (`test_mock_analyse.py`)
 
 **But du mock** : isoler l’appel à `regression_lineaire` sans exécuter son algorithme.
@@ -108,6 +121,11 @@ def test_appel_regression_lineaire(mocker):
 ```
 
 Il y a eu besoin de légèrement modifier le test car la fonction regression_lineaire n'était pas récupérée pour le test.
+
+Cette étape utilise un mock (simulation) pour tester que la fonction `regression_lineaire` est bien appelée avec les bons paramètres.
+
+- On ne teste pas ici le calcul réel, mais uniquement que l’appel se fait correctement.
+- Cela permet d’isoler les dépendances et de se concentrer sur la logique d’appel plutôt que sur les résultats.
 
 ---
 
@@ -145,6 +163,12 @@ def test_regression_erreurs():
 
 Rien de remarquable, les tests s'exécutent bien du premier coup.
 
+Les tests unitaires vérifient que les fonctions du fichier `analyse.py` fonctionnent correctement.
+
+- On teste `moyenne` avec des valeurs classiques et un cas d’erreur (liste vide).
+- On utilise `pytest.mark.parametrize` pour tester plusieurs cas de régression linéaire.
+- On vérifie aussi les cas où une erreur doit être levée, par exemple lorsque les listes sont vides ou constantes.
+
 ---
 
 ## 4. API Flask (`app.py`)
@@ -179,6 +203,12 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
+C’est ici qu’on crée une API web avec Flask.
+
+- La route `/ping` permet de vérifier que le service est actif (utile pour le monitoring).
+- La route `/analyse` reçoit deux listes (`x` et `y`) en JSON, appelle la fonction de régression, et retourne les coefficients `a` et `b` sous forme JSON.
+- Les erreurs sont gérées pour éviter que l’API ne plante en cas d’entrée incorrecte.
+
 ### 4.1 Exposition de l’API
 
 - **Hôte** : `127.0.0.1`
@@ -196,6 +226,12 @@ if __name__ == '__main__':
 Lorsque l'on accède à la page http://127.0.0.1:5000/ping, une réponse {"message": "pong"} est envoyée
 
 Lorsque l'on utilise l'autre API en mode POST, on obtient la réponse {"a":2.0,"b":0.0}
+
+On explique ici comment interagir avec l’API en ligne de commande.
+
+- On utilise `curl` pour envoyer des requêtes GET et POST vers l’API.
+- Cela permet de tester rapidement que l’API fonctionne sans interface graphique.
+- Les exemples montrent la structure attendue du JSON envoyé.
 
 ---
 
@@ -244,6 +280,14 @@ def test_analyse_erreur(client):
     assert "error" in r.get_json()
 ```
 
+On utilise `pytest` et la fixture `client` de Flask pour simuler des requêtes HTTP vers l’API.
+
+- Le fichier `conftest.py` initialise un client de test Flask.
+- Le fichier `test_api.py` contient des tests pour :
+  - Vérifier que `/ping` répond bien.
+  - Vérifier que `/analyse` retourne les bons coefficients.
+  - Vérifier que l’API gère bien les erreurs (listes vides, etc).
+
 ---
 
 ## 6. Lancement des tests et exécution
@@ -264,6 +308,14 @@ python app.py
 
 **VSCode** : utiliser le terminal intégré et le panneau “Testing” pour lancer et visualiser les tests.
 
+On donne ici les commandes pour :
+
+- Activer l’environnement virtuel.
+- Lancer tous les tests avec `pytest`.
+- Démarrer l’API en local avec `python app.py`.
+
+Cela permet de vérifier le bon fonctionnement du projet localement avant de l’intégrer sur GitHub.
+
 ---
 
 ## 7. Gestion de version et CI
@@ -280,6 +332,14 @@ git commit -m "Initial commit"
 git remote add origin <URL_DU_DEPOT>
 git push -u origin main
 ```
+
+On utilise `git` pour :
+
+- Initialiser un dépôt local.
+- Commiter les fichiers.
+- Pousser le projet vers un dépôt distant sur GitHub.
+
+Cela permet de suivre l’évolution du projet et de collaborer efficacement.
 
 ### 7.2 CI avec GitHub Actions
 
@@ -308,6 +368,11 @@ jobs:
 
 Chaque **push** ou **pull request** déclenche l’exécution de `pytest`.
 
+On configure GitHub Actions pour exécuter automatiquement les tests à chaque `push` ou `pull request`.
+
+- Le fichier YAML décrit les étapes à exécuter : installer Python, les dépendances, et lancer les tests.
+- Cela garantit que le projet reste fonctionnel à tout moment.
+
 ### 7.3 Self-hosted runner (option sans frais GitHub-hosted)
 
 1. Sur GitHub, aller dans **Settings > Actions > Runners > New self-hosted runner**.
@@ -332,5 +397,12 @@ Chaque **push** ou **pull request** déclenche l’exécution de `pytest`.
          - run: pip install -r requirements.txt
          - run: pytest -v
    ```
+
+L'url utilisé ici est https://github.com/Tozano/pytest-cahier-des-charges
+
+On peut choisir d’utiliser un serveur personnel pour exécuter la CI plutôt que les serveurs de GitHub.
+
+- Cela permet de ne pas être limité par le quota GitHub ou de tester dans un environnement personnalisé.
+- On suit les instructions de GitHub pour configurer ce type de runner.
 
 ---
