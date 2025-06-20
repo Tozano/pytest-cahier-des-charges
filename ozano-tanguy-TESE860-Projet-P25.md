@@ -1,6 +1,6 @@
 # Cahier des charges – Application d’analyse de données (Régression linéaire) avec API Flask
 
-J.Gaber
+Tanguy OZANO
 
 ## Contexte et objectifs
 
@@ -280,6 +280,10 @@ def test_analyse_erreur(client):
     assert "error" in r.get_json()
 ```
 
+![L'api en /analyse répond bien](<./images/Capture d'écran 2025-06-12 140031.png>)
+
+![L'api en /ping répond bien](<./images/Capture d'écran 2025-06-12 140444.png>)
+
 On utilise `pytest` et la fixture `client` de Flask pour simuler des requêtes HTTP vers l’API.
 
 - Le fichier `conftest.py` initialise un client de test Flask.
@@ -333,6 +337,8 @@ git remote add origin <URL_DU_DEPOT>
 git push -u origin main
 ```
 
+![Le projet a bien été push sur GitHub](<./images/Capture d'écran 2025-06-12 142138.png>)
+
 On utilise `git` pour :
 
 - Initialiser un dépôt local.
@@ -382,9 +388,13 @@ On configure GitHub Actions pour exécuter automatiquement les tests à chaque `
    ./config.sh --url https://github.com/username/mon_projet                --token <TOKEN>                --labels self-hosted,linux
    ```
 3. Démarrer le runner :
+
    ```bash
    ./run.sh
    ```
+
+![GitHub Actions démarre bien](<./images/Capture d'écran 2025-06-12 143435.png>)
+
 4. Adapter le workflow :
    ```yaml
    jobs:
